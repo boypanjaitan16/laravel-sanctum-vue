@@ -30,6 +30,9 @@
                             </form>
                         </div>
                     </div>
+                    <p class="text-center mt-5">
+                        <router-link :to="{name : 'home', params : this.$route.params}">&leftarrow; Back to Home</router-link>
+                    </p>
                 </div>
             </div>
         </div>
@@ -116,10 +119,9 @@
 
         //check user already logged in
         mounted() {
-            // console.log(this.$route.params);
-            this.all
+            console.log(this.$route.params);
             if (this.loggedIn) {
-                return this.$router.push({ name: 'dashboard' })
+                return this.$router.push({ name: 'onguard', params : this.$route.params })
             }
         }
     }

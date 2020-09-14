@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <div class="card-body">
-            <h3 class="text-center font-weight-bold text-success">Welcome to LaraVue</h3>
+            <h3 class="text-center font-weight-bold">Welcome Home</h3>
         </div>
     </div>
 </template>
